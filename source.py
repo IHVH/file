@@ -7,11 +7,15 @@ class Point:
      y: int
 
 
-filename = r"Download\test.txt"
-path = os.path.dirname(filename)
-os.makedirs(path, exist_ok=True)
-with open(filename, "w") as f:
-    f.write("test")
-
+def write_file():
+     filename = r"Download\test.txt"
+     path = os.path.dirname(filename)
+     os.makedirs(path, exist_ok=True)
+     with open(filename, "w") as f:
+          f.write("test")
+    
+    
+write_file()
+print("OK")
 
 
